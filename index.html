@@ -1,37 +1,15 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <header>
-      <h1>わたしメモ</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">ホーム</a>
-          <li><a href="#about">メモについて</a>
-          <li><a href="#contact">お問い合わせ</a>
-        </ul>
-      </nav>
-    </header>
-    <aside>
-      <nav>
-        <h1>最新記事</h1>
-        <ul>
-          <li><a href="entry1.html">学校のこと</a></li>
-           <li><a href="entry２.html">ITのこと</a></li>
-           <li><a href="entry３.html">家のこと</a></li>
-          
-    <main>
-      <section id="about">
-        <h2>勉強について</h2>
-        
-        <article>
-          <h3>HTML</h3>
-          <p>HMTLとかもう慣れですよね<br>とにかく頑張って書くしかないですよね...</p>
-          <p>全然関係ないんですが、このページの各順番ぐちゃぐちゃでみづらいですね。</p>
-          <p>でも練習なのでこのままにしておきます。自分で位置や使用するタグを考えるの難しいなあ。</p>
-          <footer>投稿日 :2025/07/26</footer>
-        </article>
-      </section>
-    </main>
+<form action="/submit" method="POST">
+  <label for="username">ユーザ名:</label>
+  <input type="text" id="username" name="username" placeholder="入力してください">
+  
+  <label for="password">パスワード:</label>
+  <input type="password" id="password" name="password" placeholder="入力してください">
+  
+  <label for="性別">性別を選択:</label>
+  <input type="radio" name="gender" value="male">男性
+  <input type="radio" name="gender" value="female">女性
+
+  <input type="checkbox" name="subscribe" value="yes">ニュースレターを購読する
+
+  <input type="submit">
+</form>
