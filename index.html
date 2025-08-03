@@ -1,6 +1,6 @@
 <form action="/submit" method="POST">
   <label for="username">ユーザ名:</label>
-  <input type="text" id="username" name="username" placeholder="入力してください">
+  <input type="text" id="username" name="username" pattern=".{4,10}" placeholder="入力してください" required>
   
   <label for="password">パスワード:</label>
   <input type="password" id="password" name="password" placeholder="入力してください">
